@@ -89,6 +89,8 @@ Without these dependencies the in game videos won't play, and throw an error.
 	2. Open a terminal in the directory where the file was downloaded to
 	3. Install the script under Lutris with `lutris -i white-album-2-extended-edition-dvd.yml`
 
+During installation leave the install directory as default.
+
 After Disc 1 has finished installing, a prompt will appear asking for Disc 2 to be inserted. Insert Disc 2 and ensure you can see it's contents in your file manager before pressing OK on the prompt to continue.
 
 If you installed the game with CDemu, make sure to unload the discs afterwards
@@ -111,7 +113,7 @@ If you are using an internal disc reader where this isn't possible you can inste
 
 
 ### Disc Check Error Dialog
-![Disc Check Error Dialog](/images/disc-check-error.png)
+![Disc Check Error Dialog](/images/disc-check-error.png)  
 This error may occur when the game installer is ran from an mounted ISO. Ensure your mounting the installer ISO's with [CDemu](https://wiki.archlinux.org/title/CDemu).
 
 
