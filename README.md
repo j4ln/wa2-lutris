@@ -109,12 +109,12 @@ This may be due to one of the discs data being misread during installation. Try 
 ### After Disc 1, the installer is unable to continue with Disk 2
 To resolve this I had to reconnect my external disc reader after switching the discs so that I could mount disc 2, and see it's files correctly before pressing OK on the continue prompt.
 
-If you are using an internal disc reader where this isn't possible you can instead dump both the discs as ISO's and load them in with CDemu before starting the installation. See the below troubleshooting heading for more on this approach.
+If you are using an internal disc reader where this isn't possible you can instead dump both the discs as ISO's and load them in with CDemu before starting the installation. See the [Using CDemu](#using-cdemu-if-using-isos) section of this guide for more on this.
 
 
 ### Disc Check Error Dialog
 ![Disc Check Error Dialog](/images/disc-check-error.png)  
-This error may occur when the game installer is ran from an mounted ISO. Ensure your mounting the installer ISO's with [CDemu](https://wiki.archlinux.org/title/CDemu).
+This error may occur when the game installer is ran from an mounted ISO. Ensure your mounting the installer ISO's with [CDemu](https://wiki.archlinux.org/title/CDemu). See the [Using CDemu](#using-cdemu-if-using-isos) section of this guide for more on this.
 
 
 ## Credit
