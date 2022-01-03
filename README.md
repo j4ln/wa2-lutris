@@ -83,9 +83,15 @@ Without these dependencies the in game videos won't play, and throw an error.
 
 
 ### Running the Lutris installer
-- Via Lutris | Pending moderation, use the below steps for now
+There is a few different ways you can start the installer these are listed below. You only need to do one of them.
+- From the Lutris website
+	1. Select the Install button on the [White Album 2 app page](https://lutris.net/games/white-album-2/) for the Extended Edition (DVD) version
+- From the Lutris app
+	1. Select the Lutris source on the right
+	2. Search for "White Album 2" under the Community Installers tab
+	3. Select Install for "White Album 2"
 - Local with the install script
-	1. Download the install script [white-album-2-extended-edition-dvd.yml](/white-album-2-extended-edition-dvd.yml)
+	1. Download the Lutris install script [white-album-2-extended-edition-dvd.yml](/white-album-2-extended-edition-dvd.yml)
 	2. Open a terminal in the directory where the file was downloaded to
 	3. Install the script under Lutris with `lutris -i white-album-2-extended-edition-dvd.yml`
 
