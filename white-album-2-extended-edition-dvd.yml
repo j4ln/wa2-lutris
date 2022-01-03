@@ -1,0 +1,50 @@
+name: White Album 2
+version: Extended Edition (DVD)
+game_slug: white-album-2
+slug: white-album-2-extended-edition-dvd
+runner: wine
+
+script:
+  files:
+  - patch: https://github.com/TodokanaiTL/WA2EnglishPatch/releases/latest/download/WA2_patch.exe
+
+  game:
+    exe: $GAMEDIR/drive_c/Leaf/WHITE ALBUM2/WA2.exe
+    arch: win32
+    prefix: $GAMEDIR
+
+  wine:
+    version: lutris-5.7-11-x86_64
+    dxvk: true
+
+  installer:
+  - task:
+      name: create_prefix
+      description: Creating WINE prefix...
+      arch: win32
+      prefix: $GAMEDIR
+      install_gecko: false
+      install_mono: false
+  - task:
+      name: winetricks
+      description: Installing winetricks dependencies...
+      app: fontsmooth=rgb fakejapanese_ipamona
+      prefix: $GAMEDIR
+  - insert-disc:
+      description: Waiting for game installer...
+      message: Insert disc 1 out of 2
+      requires: disc1Data.LAC
+  - task:
+      name: wineexec
+      description: Installing White Album 2...
+      prefix: $GAMEDIR
+      executable: $DISC/setup.exe
+  - task:
+      name: wineexec
+      description: Patching White Album 2...
+      prefix: $GAMEDIR
+      executable: patch
+
+  system:
+    env:
+      LC_ALL: ja_JP.utf8
