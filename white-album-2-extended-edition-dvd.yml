@@ -14,8 +14,9 @@ script:
     prefix: $GAMEDIR
 
   wine:
-    version: lutris-5.7-11-x86_64
     dxvk: true
+    dxvk_version: v1.10L
+    version: lutris-5.7-11-x86_64
 
   installer:
   - task:
