@@ -43,6 +43,12 @@ Otherwise generate/install the locale, and install a supported Japanese font. Th
 	sudo dnf groupinstall -y 'Japanese Support'
 	sudo dnf install -y hanazono-fonts mona-*-fonts
 	```
+- Gentoo:
+    ```
+    sudo sed -i 's/^#ja_JP.UTF-8 UTF-8/ja_JP.UTF-8 UTF-8/' /etc/locale.gen
+    sudo locale-gen
+    emerge kochi-substitute ja-ipafonts noto-cjk
+    ```
 
 
 ### Install Lutris and Wine dependencies
@@ -67,6 +73,10 @@ Without these dependencies the in game videos won't play, and throw an error.
 	```
 	sudo dnf install -y gstreamer1-{plugins-{good,ugly},libav}.i686
 	```
+- Gentoo:
+    ```
+    USE="abi_x86_32" emerge --autounmask gst-plugins-{good,ugly,libav}
+    ```
 
 
 ### Using CDemu (if using ISO's)
