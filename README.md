@@ -71,7 +71,7 @@ Without these dependencies the in game videos won't play, and throw an error.
 	```
 - Fedora:
 	```
-	sudo dnf install -y gstreamer1-{plugins-{good,ugly},libav}.i686
+	sudo dnf install -y gstreamer1-{plugins-{good,ugly},plugin-libav}.i686
 	```
 - Gentoo:
     ```
