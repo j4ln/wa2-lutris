@@ -6,7 +6,9 @@ runner: wine
 
 script:
   files:
-  - patch: https://github.com/TodokanaiTL/WA2EnglishPatch/releases/latest/download/WA2_patch.exe
+  - patch:
+      url: https://drive.usercontent.google.com/download?id=1T11iNqAeaU1vQMXyR77QytItWDHwU5MI&export=download&confirm=t
+      filename: White Album 2 Final Full Patch 1.0.3.0.rar
 
   game:
     exe: $GAMEDIR/drive_c/Leaf/WHITE ALBUM2/WA2.exe
@@ -40,11 +42,9 @@ script:
       description: Installing White Album 2...
       prefix: $GAMEDIR
       executable: $DISC/setup.exe
-  - task:
-      name: wineexec
-      description: Patching White Album 2...
-      prefix: $GAMEDIR
-      executable: patch
+  - extract:
+      file: patch
+      dst: $GAMEDIR/drive_c/Leaf/WHITE ALBUM2
 
   system:
     env:
